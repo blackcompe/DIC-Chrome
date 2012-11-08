@@ -1,36 +1,50 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>DIC-Chrome</title>
-    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../styles/popup.css" />
-    <script src="../scripts/jquery.js"></script>
-    <script src="../scripts/config.js"></script>
-    <script src="../scripts/dic.js"></script>
-    <script src="../scripts/popup.js"></script>
+<meta charset="utf-8">
+<title>DIC-Chrome</title>
+<link rel="stylesheet" type="text/css"
+	href="../styles/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../styles/popup.css" />
+<script src="../scripts/jquery.js"></script>
+<script src="../scripts/config.js"></script>
+<script src="../scripts/dic.js"></script>
+<script src="../scripts/popup.js"></script>
 </head>
 <body>
-    <div id="body" class="container" style="width: 425px;">
-        <div id="alert-error" class="alert alert-error hidden">
-            <p>The request was redirected to the sign in screen. Please sign in and try again.</p>
-            <p>
-                <a href="http://www.dreamincode.net/forums/index.php?&app=core&module=global&section=login&do=form">Sign In Here</a>
-            </p>
-        </div>
-        <div id="alert-info" class="alert alert-info hidden">
-            No unread in your subscriptions.
-        </div>
-        <div id="loader">
-            <div class="progress progress-striped active">
-                <div class="bar bar-warning" style="width: 100%"></div>
-            </div>
-        </div>
-        <div id="entries" class="hidden">
-            <ul class="nav nav-list">
-                <li class="nav-header">Unread</li>
-            </ul>
-        </div>
-    </div>
+	<div id="body" class="container" style="width: 425px;">
+		<div id="alert-error" class="alert alert-error hidden">
+			<p>The request was redirected to the sign in screen. Please sign
+				in and try again.</p>
+		</div>
+		<div id="login-form" class="hidden">
+			<form class="form-inline">
+				<input type="text" id="username" class="input-small"
+					placeholder="Username"> <input type="password"
+					id="password" class="input-small" placeholder="Password"> <label
+					class="checkbox"> <input type="checkbox" id="remember">
+					Remember me
+				</label>
+				<button type="submit" class="btn" id="login-btn">Sign in</button>
+			</form>
+		</div>
+		<div id="login-loader" class="hidden">
+			<div class="progress progress-striped active">
+				<div class="bar bar-warning" style="width: 100%"></div>
+			</div>
+		</div>
+		<div id="alert-info" class="alert alert-info hidden">No unread
+			in your subscriptions.</div>
+		<div id="loader">
+			<div class="progress progress-striped active">
+				<div class="bar bar-warning" style="width: 100%"></div>
+			</div>
+		</div>
+		<div id="entries" class="hidden">
+			<ul class="nav nav-list">
+				<li class="nav-header">Unread</li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
