@@ -18,4 +18,5 @@
 	"permissions": [
 		"*://*.dreamincode.net/"
 	]
+	"options_page": "pages/options.html"
 }
